@@ -2,7 +2,7 @@
 node_modules/
 
 # build outputs
-dist/
+server/dist/
 client/dist/
 
 # environment files
