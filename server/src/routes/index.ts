@@ -6,8 +6,7 @@ import { authenticateToken } from "../middleware/auth.js";
 const router = Router();
 
 // Public auth endpoints
-router.use("/auth", authRoutes);
-
+router.use("/api/auth", authRoutes);
 // Protect all other API routes
 router.use("/api", authenticateToken, apiRoutes);
 
