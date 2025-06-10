@@ -16,11 +16,12 @@ const corsOptions = {
   origin: process.env.CLIENT_URL || '*',
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization']
+  allowedHeaders: ['Content-Type', 'Authorization'],
 };
 
 // Enable CORS for all routes
 app.use(cors(corsOptions));
+
 // Handle CORS preflight requests for all routes
 app.options('*', cors(corsOptions));
 
